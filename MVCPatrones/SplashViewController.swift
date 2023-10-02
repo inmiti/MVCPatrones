@@ -9,21 +9,36 @@ import UIKit
 
 class SplashViewController: UIViewController {
 
+    // MARK: - Outlets
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadData()
 
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if(!activityIndicator.isAnimating){
+            activityIndicator.startAnimating()
+        }
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        activityIndicator.stopAnimating()
+    }
+    
+    // Método de carga de datos:
+    private func loadData() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3)) {
+            let nextVC = HomeTableViewController()
+            self.navigationController?.setViewControllers([nextVC], animated: true)
+            
+        }
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

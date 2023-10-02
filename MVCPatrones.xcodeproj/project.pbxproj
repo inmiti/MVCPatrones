@@ -13,6 +13,11 @@
 		1FD917DD2ACB4972007143F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FD917DB2ACB4972007143F9 /* LaunchScreen.storyboard */; };
 		1FD917E62ACB53F1007143F9 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD917E42ACB53F1007143F9 /* SplashViewController.swift */; };
 		1FD917E72ACB53F1007143F9 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FD917E52ACB53F1007143F9 /* SplashViewController.xib */; };
+		1FD917EA2ACB5A3C007143F9 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD917E82ACB5A3C007143F9 /* HomeTableViewController.swift */; };
+		1FD917EB2ACB5A3C007143F9 /* HomeTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FD917E92ACB5A3C007143F9 /* HomeTableViewController.xib */; };
+		1FD917EE2ACB5EAF007143F9 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD917EC2ACB5EAF007143F9 /* HomeTableViewCell.swift */; };
+		1FD917EF2ACB5EAF007143F9 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FD917ED2ACB5EAF007143F9 /* HomeTableViewCell.xib */; };
+		1FD917F12ACB6557007143F9 /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD917F02ACB6557007143F9 /* CharacterModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		1FD917DE2ACB4972007143F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FD917E42ACB53F1007143F9 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		1FD917E52ACB53F1007143F9 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		1FD917E82ACB5A3C007143F9 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		1FD917E92ACB5A3C007143F9 /* HomeTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewController.xib; sourceTree = "<group>"; };
+		1FD917EC2ACB5EAF007143F9 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		1FD917ED2ACB5EAF007143F9 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		1FD917F02ACB6557007143F9 /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,11 @@
 				1FD917DB2ACB4972007143F9 /* LaunchScreen.storyboard */,
 				1FD917E42ACB53F1007143F9 /* SplashViewController.swift */,
 				1FD917E52ACB53F1007143F9 /* SplashViewController.xib */,
+				1FD917E82ACB5A3C007143F9 /* HomeTableViewController.swift */,
+				1FD917E92ACB5A3C007143F9 /* HomeTableViewController.xib */,
+				1FD917EC2ACB5EAF007143F9 /* HomeTableViewCell.swift */,
+				1FD917ED2ACB5EAF007143F9 /* HomeTableViewCell.xib */,
+				1FD917F02ACB6557007143F9 /* CharacterModel.swift */,
 			);
 			path = MVCPatrones;
 			sourceTree = "<group>";
@@ -125,8 +140,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FD917EB2ACB5A3C007143F9 /* HomeTableViewController.xib in Resources */,
 				1FD917DD2ACB4972007143F9 /* LaunchScreen.storyboard in Resources */,
 				1FD917E72ACB53F1007143F9 /* SplashViewController.xib in Resources */,
+				1FD917EF2ACB5EAF007143F9 /* HomeTableViewCell.xib in Resources */,
 				1FD917DA2ACB4972007143F9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FD917EA2ACB5A3C007143F9 /* HomeTableViewController.swift in Sources */,
+				1FD917EE2ACB5EAF007143F9 /* HomeTableViewCell.swift in Sources */,
 				1FD917D12ACB496F007143F9 /* AppDelegate.swift in Sources */,
+				1FD917F12ACB6557007143F9 /* CharacterModel.swift in Sources */,
 				1FD917D32ACB496F007143F9 /* SceneDelegate.swift in Sources */,
 				1FD917E62ACB53F1007143F9 /* SplashViewController.swift in Sources */,
 			);
