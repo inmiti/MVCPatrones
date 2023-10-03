@@ -14,6 +14,12 @@ class HomeTableViewCell: UITableViewCell {
     @IBOutlet weak var imageHomeCell: UIImageView!
     @IBOutlet weak var nameHomeCell: UILabel!
     
+//    static let identifier = "HomeCell"
+    
+//    func configure(name: String, foto: UIImage ) {
+//        imageHomeCell.image = foto
+//        nameHomeCell.text = name
+//    }
     
     override func awakeFromNib() { // Se llama la primera vez y prepara la celda
         super.awakeFromNib()
@@ -33,8 +39,18 @@ class HomeTableViewCell: UITableViewCell {
         nameHomeCell = nil
     }
     
-    func updateViews() {
+    func updateViews(data: HomeCellModel) {
+        update(name: data.name)
+        update(image: data.image)
         
+    }
+    
+    private func update(name: String?) {
+        nameHomeCell.text = name ?? ""
+    }
+    
+    private func update(image: String?) {
+        imageHomeCell.image = UIImage(named: image ?? "")
     }
     
 }
