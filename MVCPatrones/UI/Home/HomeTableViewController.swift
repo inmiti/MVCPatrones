@@ -13,12 +13,13 @@ class HomeTableViewController: UITableViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+       registerCell()
     }
     
     private func registerCell () {
         tableView?.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: "HomeCell")
     }
-    
+
     
     
     // MARK: - Table view data source

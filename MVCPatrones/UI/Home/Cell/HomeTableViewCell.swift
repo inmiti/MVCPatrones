@@ -21,7 +21,7 @@ class HomeTableViewCell: UITableViewCell {
 //        nameHomeCell.text = name
 //    }
     
-    override func awakeFromNib() { // Se llama la primera vez y prepara la celda
+    override func awakeFromNib() { // Se llama la primera vez y prepara formato la celda
         super.awakeFromNib()
         viewHomeCell.layer.cornerRadius = 4.0
         viewHomeCell.layer.shadowColor = UIColor.gray.cgColor
@@ -33,10 +33,10 @@ class HomeTableViewCell: UITableViewCell {
         imageHomeCell.layer.opacity = 0.7
     }
     
-    override func prepareForReuse() {  // limpia las celdas para ir cargando mas datos, no las carga todas de golpe
+    override func prepareForReuse() {  // limpia las celdas para ir cargando mas datos, no las carga todas  de golpe al hacer scroll
         super.prepareForReuse()
-        imageHomeCell = nil
-        nameHomeCell = nil
+        imageHomeCell.image = nil
+        nameHomeCell.text = nil
     }
     
     func updateViews(data: HomeCellModel) {
