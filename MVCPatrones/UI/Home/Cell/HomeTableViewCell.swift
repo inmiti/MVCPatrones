@@ -33,7 +33,7 @@ class HomeTableViewCell: UITableViewCell {
         imageHomeCell.layer.opacity = 0.7
     }
     
-    override func prepareForReuse() {  // limpia las celdas para ir cargando mas datos, no las carga todas  de golpe al hacer scroll
+    override func prepareForReuse() {  // limpia las celdas para ir cargando mas datos, no las carga todas de golpe al hacer scroll
         super.prepareForReuse()
         imageHomeCell.image = nil
         nameHomeCell.text = nil

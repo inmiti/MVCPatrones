@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F237BF52AD01CFE007D73C5 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F237BF42AD01CFE007D73C5 /* SplashViewController.xib */; };
 		1FB618292ACC859100548315 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB618272ACC859100548315 /* DetailViewController.swift */; };
 		1FB6182A2ACC859100548315 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FB618282ACC859100548315 /* DetailViewController.xib */; };
 		1FB618382ACC8EC700548315 /* HomeCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB618372ACC8EC700548315 /* HomeCellModel.swift */; };
@@ -15,7 +16,6 @@
 		1FD917DA2ACB4972007143F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FD917D92ACB4972007143F9 /* Assets.xcassets */; };
 		1FD917DD2ACB4972007143F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FD917DB2ACB4972007143F9 /* LaunchScreen.storyboard */; };
 		1FD917E62ACB53F1007143F9 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD917E42ACB53F1007143F9 /* SplashViewController.swift */; };
-		1FD917E72ACB53F1007143F9 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FD917E52ACB53F1007143F9 /* SplashViewController.xib */; };
 		1FD917EA2ACB5A3C007143F9 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD917E82ACB5A3C007143F9 /* HomeTableViewController.swift */; };
 		1FD917EB2ACB5A3C007143F9 /* HomeTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FD917E92ACB5A3C007143F9 /* HomeTableViewController.xib */; };
 		1FD917EE2ACB5EAF007143F9 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD917EC2ACB5EAF007143F9 /* HomeTableViewCell.swift */; };
@@ -24,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F237BF42AD01CFE007D73C5 /* SplashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		1FB618272ACC859100548315 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		1FB618282ACC859100548315 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		1FB618372ACC8EC700548315 /* HomeCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellModel.swift; sourceTree = "<group>"; };
@@ -34,7 +35,6 @@
 		1FD917DC2ACB4972007143F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FD917DE2ACB4972007143F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FD917E42ACB53F1007143F9 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
-		1FD917E52ACB53F1007143F9 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		1FD917E82ACB5A3C007143F9 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		1FD917E92ACB5A3C007143F9 /* HomeTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewController.xib; sourceTree = "<group>"; };
 		1FD917EC2ACB5EAF007143F9 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
@@ -53,6 +53,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F9462472AD00D2B003CAACF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1FD917E92ACB5A3C007143F9 /* HomeTableViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1F9462482AD0139C003CAACF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1FD917E82ACB5A3C007143F9 /* HomeTableViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1F9462492AD01C34003CAACF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1FD917E42ACB53F1007143F9 /* SplashViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1F94624A2AD01C3F003CAACF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1FD917DB2ACB4972007143F9 /* LaunchScreen.storyboard */,
+				1F237BF42AD01CFE007D73C5 /* SplashViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		1FB6182B2ACC8BFC00548315 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,9 +116,8 @@
 		1FB6182E2ACC8C5B00548315 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				1FD917DB2ACB4972007143F9 /* LaunchScreen.storyboard */,
-				1FD917E42ACB53F1007143F9 /* SplashViewController.swift */,
-				1FD917E52ACB53F1007143F9 /* SplashViewController.xib */,
+				1F9462492AD01C34003CAACF /* ViewController */,
+				1F94624A2AD01C3F003CAACF /* View */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -94,9 +126,9 @@
 			isa = PBXGroup;
 			children = (
 				1FB618362ACC8E9B00548315 /* Model */,
+				1F9462482AD0139C003CAACF /* ViewController */,
+				1F9462472AD00D2B003CAACF /* View */,
 				1FB618312ACC8CE000548315 /* Cell */,
-				1FD917E82ACB5A3C007143F9 /* HomeTableViewController.swift */,
-				1FD917E92ACB5A3C007143F9 /* HomeTableViewController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -178,9 +210,9 @@
 		1FD917CF2ACB496F007143F9 /* MVCPatrones */ = {
 			isa = PBXGroup;
 			children = (
-				1FB618322ACC8CFC00548315 /* Domain */,
 				1FB6182B2ACC8BFC00548315 /* App */,
 				1FB6182C2ACC8C1600548315 /* Resources */,
+				1FB618322ACC8CFC00548315 /* Domain */,
 				1FB6182D2ACC8C2A00548315 /* UI */,
 				1FD917DE2ACB4972007143F9 /* Info.plist */,
 			);
@@ -248,7 +280,7 @@
 				1FD917EB2ACB5A3C007143F9 /* HomeTableViewController.xib in Resources */,
 				1FB6182A2ACC859100548315 /* DetailViewController.xib in Resources */,
 				1FD917DD2ACB4972007143F9 /* LaunchScreen.storyboard in Resources */,
-				1FD917E72ACB53F1007143F9 /* SplashViewController.xib in Resources */,
+				1F237BF52AD01CFE007D73C5 /* SplashViewController.xib in Resources */,
 				1FD917EF2ACB5EAF007143F9 /* HomeTableViewCell.xib in Resources */,
 				1FD917DA2ACB4972007143F9 /* Assets.xcassets in Resources */,
 			);
